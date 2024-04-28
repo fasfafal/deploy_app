@@ -1,0 +1,21 @@
+databases:
+  - name: deploy_app
+    databaseName: test_app_kim1
+    user: deploy_app
+    region: singapore
+
+services:
+  - type: web
+    name: deploy_app
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: deploy_app
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
