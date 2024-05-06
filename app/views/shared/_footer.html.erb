@@ -1,7 +1,13 @@
-<p>テスト</p><%= link_to '陰キャ実験場(10秒経つと反応しないっす)',"https://twitter.com/intent/tweet?url=腱鞘炎にお気を付けてください%20%23RUNTEQ%20%23陰キャ https://puchipuchi.onrender.com", target: "_blank", class:"no-click1"%>
+<p>リンクのテスト</p>
+<br>
+<%= link_to '陰キャ実験場(10秒経つと反応しないっす)',"https://twitter.com/intent/tweet?url=腱鞘炎にお気を付けてください%20%23RUNTEQ%20%23陰キャ https://puchipuchi.onrender.com", target: "_blank", class:"no-click1"%>
 <br>
 <br>
 <%= link_to 'デプロイでいやほい', "https://twitter.com/intent/tweet?url=デプロイの喜びを分かち合おう%20%23RUNTEQ%20%23陰キャ https://deploy-app-zpmj.onrender.com", target: "_blank", class: "no-click2" %>
+<br>
+<br>
+<br>
+<%= link_to '陰キャのプチプチくん潰し' ,"https://puchipuchi.onrender.com" ,target: "blank", class: "btn message" %>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
   // 10秒後に実行する関数をセット
@@ -18,3 +24,17 @@
     }, 10000); // 10000ミリ秒後に実行
   });
 </script>
+<style>
+  .message {
+      text-align: center;
+      padding: 15px 40px;
+      background-color: #5dca88;
+      box-shadow: 0 7px #1a7940;
+    }
+
+    .message:active {
+      box-shadow: none;
+      position: relative;
+      top: 7px;
+    }
+</style>
