@@ -1,0 +1,8 @@
+{
+  "name": "deploy_app2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fasfafal/deploy_app.git",
+  "author": "fasfafal <nogulin0530@gmail.com>",
+  "license": "MIT"
+}
